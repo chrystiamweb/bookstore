@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+admin:
+  name: Chrystiam Andrade
+  email: chrystiam.andrade@gmail.com
+  password_digest: <%= BCrypt::Password.create('secret') %>
+  born_at: 1992-01-01
+  admin: true
+
+autor:
+  name: Joao da Silva
+  email: joao@silva.com
+  password_digest: <%= BCrypt::Password.create('secretagain') %>
+  born_at: 1992-08-28
+  admin: false
